@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fixed Header</title>
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            font-family: Arial, sans-serif;
+        }
+        .header {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            background: #333;
+            color: white;
+            height: 60px;
+        }
+        .logo {
+            /* position: absolute;
+            left: 20px;
+            top: 10px; */
+        }
+        .logo img {
+            height: 40px;
+            margin-left: 20px;
+            margin-top: 10px;
+            /* vertical-align: middle; */
+        }
+        .logo h4 {
+            /* vertical-align: middle; */
+            margin-left: 64px;
+            margin-top: -30px
+        }
+        .menu {
+            position: absolute;
+            right: 20px;
+            top: 25px;     
+        }
+        .menu ul {
+            margin: 0;
+            padding: 0;
+            list-style: none;
+        }
+        .menu li {
+            display: inline;
+            margin-left: 15px;
+        }
+        .menu a {
+            color: white;
+            text-decoration: none;
+            font-size: 16px;
+        }
+        .menu a:hover {
+            text-decoration: underline;
+        }
+        .content {
+            margin-top: 70px;
+            padding: 20px;
+        }
+    </style>
+</head>
+<body>
+    <header class="header">
+        <div class="logo">
+            <img src="SHCI Final Official Logo.png" alt="Company Logo">
+            <h4>  Company Name</h4>
+        </div>
+        <nav class="menu">
+            <ul>
+                <li><a href="#">Home</a></li>
+                <li><a href="#">About</a></li>
+                <li><a href="#">Services</a></li>
+                <li><a href="#">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+    <div class="content">
+        <p>Welcome to our website. Scroll down to see the fixed header in action.</p>
+        <p style="height: 1000px;">Keep scrolling...</p>
+    </div>
+</body>
+</html>
